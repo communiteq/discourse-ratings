@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 # name: discourse-ratings
 # about: A Discourse plugin that lets you use topics to rate things
-# version: 0.2.3
-# authors: Angus McLeod, Faizaan Gagan
+# version: 1.0
+# authors: Pavilion
 # url: https://github.com/paviliondev/discourse-ratings
 # contact_emails: development@pavilion.tech
 
