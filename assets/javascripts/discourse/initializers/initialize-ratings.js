@@ -33,7 +33,7 @@ export default {
     withPluginApi("0.10.0", (api) => {
       const currentUser = api.getCurrentUser();
 
-      api.includePostAttributes("ratings");
+      api.addTrackedPostProperties("ratings");
 
       api.decorateWidget("poster-name:after", function (helper) {
         const post = helper.getModel();
