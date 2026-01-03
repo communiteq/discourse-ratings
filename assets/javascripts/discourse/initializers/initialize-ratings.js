@@ -35,25 +35,6 @@ export default {
 
       api.addTrackedPostProperties("ratings");
 
-      api.decorateWidget("poster-name:after", function (helper) {
-        const post = helper.getModel();
-
-        if (post && post.topic && post.topic.show_ratings && post.ratings) {
-          return helper.rawHtml(ratingListHtml(post.ratings));
-        }
-      });
-
-      api.reopenWidget("poster-name", {
-        buildClasses() {
-          const post = this.findAncestorModel();
-          let classes = [];
-          if (post && post.topic && post.topic.show_ratings && post.ratings) {
-            classes.push("has-ratings");
-          }
-          return classes;
-        },
-      });
-
       api.modifyClass("model:composer", {
         pluginId: PLUGIN_ID,
         editingPostWithRatings: and("editingPost", "post.ratings.length"),
