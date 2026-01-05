@@ -3,7 +3,6 @@ import { htmlSafe } from "@ember/template";
 import { ratingListHtml } from "../../lib/rating-utilities";
 
 export default class PostRatings extends Component {
-
   get showRatings() {
     return this.args.post.ratings && this.args.post.ratings.length > 0;
   }

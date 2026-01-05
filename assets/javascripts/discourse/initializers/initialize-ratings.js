@@ -13,7 +13,6 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 import Category from "discourse/models/category";
 import Composer from "discourse/models/composer";
 import { i18n } from "discourse-i18n";
-import { ratingListHtml } from "../lib/rating-utilities";
 
 const PLUGIN_ID = "discourse-ratings";
 
